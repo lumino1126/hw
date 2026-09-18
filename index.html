@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./icon-192.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f0f0f0" />
+    <title>Daily Homework</title>
+    <!-- Boot shell: visible until React mounts. If the bundle never loads, it
+         becomes a readable message instead of a blank white page. -->
+    <style>
+      html, body { margin: 0; height: 100%; background: #f0f0f0; }
+      #boot {
+        min-height: 100vh; box-sizing: border-box;
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center; gap: 6px;
+        padding: 24px; text-align: center;
+        font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+        color: #0b0b0b;
+      }
+      #boot .bt { font-size: 17px; font-weight: 500; }
+      #boot .bs { font-size: 13px; color: #a3a3a3; max-width: 320px; line-height: 1.6; }
+    </style>
+    <script type="module" crossorigin src="./assets/index-CANAD4v1.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B-OxCzzR.css">
+  <link rel="manifest" href="./manifest.json"></head>
+  <body>
+    <div id="root"><div id="boot"><div class="bt">Daily Homework</div><div class="bs" id="boot-msg">Loading…</div></div></div>
+    <script>
+      setTimeout(function () {
+        var el = document.getElementById('boot-msg')
+        if (!el) return
+        el.textContent = 'Still loading. Check your connection, then reload the page.'
+      }, 12000)
+    </script>
+  </body>
+</html>

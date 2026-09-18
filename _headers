@@ -1,0 +1,10 @@
+# Cloudflare Pages / Netlify honour this file.
+#
+# The service worker filename is versioned (sw-<ts>.js) so it changes on every
+# deploy. Keeping it out of any edge/browser long-cache means a new build is
+# picked up on the very next page load instead of after a TTL.
+/sw-*.js
+  Cache-Control: no-cache
+
+/manifest.json
+  Cache-Control: no-cache
